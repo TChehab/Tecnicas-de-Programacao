@@ -53,6 +53,24 @@ int main() {
     a1->ant = NULL;
     lista->inicio = a1;
     lista->tamanho++;
+    
+    Aluno* a2 = (Aluno*) malloc(sizeof(Aluno));
+    a2->matricula = 2;
+    strcpy(a2->nome, "Aluno 2");
+    a2->media = 9.0;
+    a2->prox = NULL;
+    a2->ant = a1;
+    a1->prox = a2;
+    lista->tamanho++;
+
+    Aluno* a3 = (Aluno*) malloc(sizeof(Aluno));
+    a3->matricula = 3;
+    strcpy(a3->nome, "Aluno 3");
+    a3->media = 7.0;
+    a3->prox = NULL;
+    a3->ant = a2;
+    a2->prox = a3;
+    lista->tamanho++;
 
     // Para ordena a lista usando o bubble sort:
     bubbleSort(lista);
