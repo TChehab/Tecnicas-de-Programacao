@@ -46,27 +46,27 @@ int main() {
 
     // Para adicionar algum aluno na lista, fazer:
     Aluno* a1 = (Aluno*) malloc(sizeof(Aluno));
-    a1->matricula = 1;
-    strcpy(a1->nome, "Aluno 1");
-    a1->media = 8.5;
+    a1->matricula = 2211194;
+    strcpy(a1->nome, "Tiago Chehab");
+    a1->media = 7;
     a1->prox = NULL;
     a1->ant = NULL;
     lista->inicio = a1;
     lista->tamanho++;
     
     Aluno* a2 = (Aluno*) malloc(sizeof(Aluno));
-    a2->matricula = 2;
-    strcpy(a2->nome, "Aluno 2");
-    a2->media = 9.0;
+    a2->matricula = 2298474;
+    strcpy(a2->nome, "Gabriel Brandao");
+    a2->media = 9;
     a2->prox = NULL;
     a2->ant = a1;
     a1->prox = a2;
     lista->tamanho++;
 
     Aluno* a3 = (Aluno*) malloc(sizeof(Aluno));
-    a3->matricula = 3;
-    strcpy(a3->nome, "Aluno 3");
-    a3->media = 7.0;
+    a3->matricula = 2236187;
+    strcpy(a3->nome, "Enzo Filippelli");
+    a3->media = 4,5;
     a3->prox = NULL;
     a3->ant = a2;
     a2->prox = a3;
